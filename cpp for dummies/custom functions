@@ -1,0 +1,48 @@
+
+// write three custom functions that make use of a global variable called 'mainNumber'; one that adds an int to it, one that subtracts an int from it and one that multiplies an int by it.
+
+#include <iostream>
+using namespace std;
+
+int mainNumber = 5; // global variable
+
+int main()
+{
+	int addInt(int); // function prototype
+	addInt(20); // calling function
+
+	int subInt(int); // function prototype
+	subInt(3); // calling function
+
+	int mplyInt(int); // function prototype
+	mplyInt(5);
+
+	return 0;
+}
+
+int addInt(int int1) // +
+{
+	int output1 = 0;
+	output1 = mainNumber + int1;
+
+	cout << int1 << " added to " << mainNumber << " is " << output1 << "." << endl;
+	return output1;
+};
+
+int subInt(int int2) // -
+{
+	int output2 = 0;
+	output2 = mainNumber - int2;
+
+	cout << int2 << " subtracted from " << mainNumber << " is " << output2 << "." << endl;
+	return output2;
+};
+
+int mplyInt(int int3) // *
+{
+	int output3 = 0;
+	output3 = mainNumber * int3;
+
+	cout << int3 << " multiplied by " << mainNumber << " is " << output3 << "." << endl;
+	return output3;
+};
